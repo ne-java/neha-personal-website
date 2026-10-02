@@ -52,3 +52,26 @@ body {
     padding-bottom: 5px;
     margin-top: 10px;
 }
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.power-image {
+    border: 60px solid black;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.power-text {
+    background-color: mediumaquamarine;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
