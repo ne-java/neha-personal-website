@@ -1,65 +1,290 @@
+/* ------------------------------------- USED FOR EVERY FILE ------------------------------------------------ */
+
+/* Related to all files - each page has the light coral color, and has courier new as the font, with courier and monospace as backups if one fails. The text color is set to black as default. Which can be changed*/
+/* (all classes) */
 body {
     background-color: lightcoral;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
 }
 
-.home > h1 {
+h1 {
+    margin: 20px;
+}
+
+
+/* styling for the ule class (related to the ul element for the navigation bar) */
+.ule {
+    /* this removes all of the bullet points, so it is just text */
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    /* this prevents the list items from going outside of the list */
+    overflow: hidden;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.ule .lie {
+    /* Makes the <li> elements float next to each other */
+    /* makes the li elements go next to each other and the inline wraps around */
+    /* this moves an element to the left side of its container */
+    /* if it was right, or center, it would move respective to that */
+    float: left;
+}
+
+.ule .lie .ae {
+    /*  Allows us to specify padding, height, width, and margins to <a> --> the text of the name is fully visible (what this basicaly does) */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.ule .lie .ae:hover {
+    background-color: darkolivegreen;
+}
+
+/* for the class of footers (all classes) */
+.footer {
+    /* align the text in the center of the page */
+    text-align: center;
+    /* changes the font size to 12px */
+    font-size: 12px;
+}
+
+
+/* ------------------------------------- INDEX.HTML ------------------------------------------------ */
+
+/* this targets the direct child of the home class, and aligns the text into the center (index.html) */
+.home>h1 {
     text-align: center;
 }
 
+/* for the home class section, the backround color is medium aquamairine (index.html)*/
 .home {
+    background: mediumaquamarine;
+    /* there is space of 10px in between the elements (eg text) */
+    padding: 10px;
+    /* there is margins between the top, left, right, and bottom with a space of 20px */
+    margin: 20px;
+    /* this allows for rounded corners of the section. The higher the number, the more round it becomes*/
+    border-radius: 15px;
+}
+
+/* rounds the corners of the image with the class of me (index.html)*/
+.me {
+    border-radius: 20px;
+}
+
+/* for the website class section, the background color is set to light blue (index.html)*/
+.website {
+    background-color: lightblue;
+    /* there is space of 10px in between the elements (eg text) */
+    padding: 10px;
+    /* there is margins between the top, left, right, and bottom with a space of 20px */
+    margin: 20px;
+    /* this allows for rounded corners of the section. The higher the number, the more round it becomes*/
+    border-radius: 15px;
+}
+
+/* styles the button color (index.html) */
+.unityButton {
+    background-color: darkolivegreen;
+}
+
+/* styles the link leading to the sora website to blue originally (indedx.html) */
+.soraLink {
+    color: blue;
+}
+
+/* when the sora link is hovered over, it changes color (index.html) */
+.soraLink:hover {
+    color: cornsilk;
+}
+
+
+/* ------------------------------------- CONTACT.HTML ------------------------------------------------ */
+/* some carry over into the recommendations.html file as well because of the similar style + layout */
+
+
+/* for the class that is questions section (contact.html)*/
+.questions {
+    /* sets the width to 100% of what the container you are in */
+    width: 100%;
+    /* the max-width (the greatest width of the textbox) can be 250px */
+    max-width: 250px;
+    /* the height of the box is 50px */
+    height: 50px;
+    /* there is a 5px spacing in between each element in the section */
+    padding: 5px;
+}
+
+/* for the class of submit, which is related to the button, so styling the button(contact.html)  */
+.submit {
+    /* this rounds the corners */
+    border-radius: 20px;
+    /* removes all of the decorations like the underline of a link */
+    text-decoration: none;
+    /* sets the width to be 100px */
+    width: 100px;
+    /* sets the color of the button to be meidum sea green */
+    background-color: mediumseagreen;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+
+}
+
+/* for the class of contacts (contact.html) */
+.contacts {
+    background-color: skyblue;
+    /* doesn't fill up the full page of the website, stops at 400px */
+    inline-size: 400px;
+    /* rounds the corners */
+    border-radius: 15px;
+    /* padding for the top */
+    padding-top: 2px;
+    /* padding for the left */
+    padding-left: 5px;
+    /* padding for the bottom */
+    padding-bottom: 5px;
+    /* margins for the top */
+    margin-top: 10px;
+}
+
+
+
+/* for all the a elements (all classes)*/
+a {
+    text-decoration: none;
+    color: cornsilk;
+
+}
+
+/* for when the user hovers over the a elements (all classes) */
+a:hover {
+    /* changes the color */
+    color: blue;
+}
+
+/* ------------------------------------- RECOMMENDATIONS.HTML ------------------------------------------------ */
+
+/* styling for the reco class (recommendations.html)  */
+.reco {
+    width: 430px;
+    /* margin: sets the top and bottom margin to 15px, and the left and right to auto */
+    margin: 15px auto;
+    /* creating of a border with a 2px width, which is solid and the color is black */
+    border: 2px solid black;
+    /* spacing between the elements */
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* ------------------------------------- SKILLS.HTML ------------------------------------------------ */
+
+/* regarding the same styling for the skills.html class to make it easier to read and be more accessible */
+.section1 {
     background: mediumaquamarine;
     padding: 10px;
     margin: 20px;
     border-radius: 15px;
 }
 
-.me {
-    border-radius: 20px;
-}
 
-.website {
-    background-color:lightblue;
+.section2 {
+    background: mediumaquamarine;
     padding: 10px;
     margin: 20px;
     border-radius: 15px;
 }
 
-.questions {
-    width: 100%;
-    max-width: 250px;
-    height: 50px;
-    padding: 5px;
-}
 
-.submit {
-    border-radius: 20px;
-    text-decoration: none;
-    width: 100px;
-    background-color: mediumseagreen;
-    font-family:'Courier New', Courier, monospace;
-    margin: 5px;
-    
-}
-
-.contacts {
-    background-color: skyblue;
-    inline-size: 400px;
+.section3 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
     border-radius: 15px;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    margin-top: 10px;
 }
 
-.footer {
-    text-align: center;
-    font-size: 12px;
+
+.section4 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    
-}  
+
+.section5 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.section6 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.section7 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.section8 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.section9 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.section10 {
+    background: mediumaquamarine;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.parent-section {
+    /* Arranges the children objects in a row -  it lines up the child elements horizontally from left to right */
+    display: flex;
+}
+
+.gif {
+    /* what this does basically assignes how much space an element has in the row to fill it up
+    for example, here in this, it is flex: 2, meaning that between each of the 2 elements the spacings
+    will be identical, allowing for an even distribution. However, I like the look of the gif on the website
+    a little closer to the main elements than just stranded in the middle, hence, why I put flex: 2; instead of
+    flex: 1; */
+    flex: 2;
+    padding: 2px;
+    margin: 20px;
+}
+
+.everything-else {
+    flex: 1;
+    padding: 2px;
+    margin: 20px;
+
+}

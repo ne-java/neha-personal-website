@@ -1,62 +1,85 @@
+<!-- Neha Garud, Oct 4 2026 -->
+<!-- This file represents the contacts page for the user to contact us, the developpers  -->
 <!DOCTYPE html>
+<!-- setting the language of the file/text to english -->
 <html lang="en">
+<!-- This is the head: which is used for the browser and search engines rather than directly shown on the web page itself -->
+
 <head>
+    <!-- ensures that the broswer correctly displays the text, emojis, fonts, etc -->
     <meta charset="UTF-8">
+    <!-- allows the page to be sized for any screen size of the device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- defines the name of the file -->
     <title>Document</title>
+    <!-- links the CSS file into the HTML so that it can be styled -->
     <link rel="stylesheet" href="style.css">
-</head>
 
 <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-             <li><a href="skills.html">Skills</a></li>
+        <!-- the class is ule and lie and ae to call the styling for the navigation bar in the style.css -->
+        <ul class="ule">
+            <li class="lie"><a href="index.html" class="ae">Home</a></li>
+            <li class="lie"><a href="contact.html" class="ae">Contact</a></li>
+            <li class="lie"><a href="recommendations.html" class="ae">Recommendations</a></li>
+            <li class="lie"><a href="skills.html" class="ae">Skills</a></li>
         </ul>
     </nav>
     <h1>Contact Form</h1>
-     <div class="gif">
-        <iframe src="crabby.gif" alt="typing keyboard gif" width="300" height="300"></iframe>
-    </div>
-    <section class="contacts">
-        <p>Name (First + Last): </p>
-        <input required placeholder="Gerald Butler">
-    </section>
-    <section class="contacts">
-        <p>Email Address: </p>
-        <input required placeholder="hello@gmail.com">
-    </section>
-    <form class="contacts">
-        <label>Gender?</label><br>
-        <input type="radio" name="gender">Female<br>
-        <input type="radio" name="gender">Male<br>
-        <input type="radio" name="gender">Non Binary<br>
-        <input type="radio" name="gender">Prefer Not to Say<br>
-    </form>
-    <section class="contacts">
-        <p>Question/Comments</p>
-        <textarea rows="5" class="questions" required placeholder="Answer here"></textarea>
-    </section>
+    <!-- parent container -->
+    <section class="parent-section">
+        <!-- child container -->
+        <section class="everything-else">
+            <section class="contacts">
+                <label for="name">Name (First + Last): </label>
+                <!-- placeholder prompts the user what they should write in the box -->
+                <input required placeholder="Gerald Butler">
+            </section>
+            <section class="contacts">
+                <label for="email">Email Address: </label>
+                <!-- placeholder prompts the user what they should write in the box -->
+                <input required placeholder="hello@gmail.com">
+            </section>
+            <form class="contacts">
+                <label>Gender?</label><br>
+                <!-- having the same name allows the radio buttons to work because it all belongs to one container, so only one can be selected -->
+                <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender">Male<br>
+                <input type="radio" name="gender">Non Binary<br>
+                <input type="radio" name="gender">Prefer Not to Say<br>
+            </form>
+            <section class="contacts">
+                <p>Question/Comments</p>
+                <!-- a text box with more area than an input box -->
+                <!-- placeholder prompts the user what they should write in the box -->
+                <textarea rows="5" class="questions" required placeholder="Answer here"></textarea>
+            </section>
 
-    <form class="contacts">
-        <label>Level of Importance</label>
-        <select>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-            <option>None</option>
-        </select>
-    </form>
+            <!-- child container -->
+            <form class="contacts">
+                <label>Level of Importance</label>
+                <!-- creates the drop down menu, with all of these options -->
+                <select>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                    <option>None</option>
+                </select>
+            </form>
 
-    <button class="submit" >Submit</button>
+            <!-- child container -->
+            <button class="submit">Submit</button>
+        </section>
 
-   
-    
+        <!-- child container -->
+        <section class="gif">
+            <!-- iframe embeddes an external image/gif/video into the website - creates an inline -->
+            <iframe src="crabby.gif" alt="typing keyboard gif" width="300" height="300"></iframe>
+        </section>
+    </section>
 
 </body>
-
+<!-- this represents the ending of the web page, where users can find more information about the creator, etc -->
 <footer class="footer">
     <p>Navigate to other pages to learn more about me!</p>
 </footer>

@@ -1,60 +1,100 @@
+<!-- Neha Garud, Oct 3 2026 -->
+<!-- This HTML file is the main home page for my website, including different elements -->
 <!DOCTYPE html>
+
+<!-- setting the language of the file/text to english -->
 <html lang="en">
+<!-- This is the head: which is used for the browser and search engines rather than directly shown on the web page itself -->
+
 <head>
+    <!-- ensures that the broswer correctly displays the text, emojis, fonts, etc -->
     <meta charset="UTF-8">
+    <!-- allows the page to be sized for any screen size of the device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- defines the name of the file -->
     <title>Document</title>
+    <!-- links the CSS file into the HTML so that it can be styled -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+
+<!-- the body class is where all of the main elements on the webpage go from -->
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-             <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
+    <header>
+        <!-- this is the navigation bar, for easily accessbile switching between different pages -->
+        <nav class="navbar">
+            <ul class="ule">
+                <li class="lie"><a href="index.html" class="ae">Home</a></li>
+                <li class="lie"><a href="contact.html" class="ae">Contact</a></li>
+                <li class="lie"><a href="recommendations.html" class="ae">Recommendations</a></li>
+                <li class="lie"><a href="skills.html" class="ae">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="home" id="#home">
-        <h1  class="welcome">Welcome to Neha's Personal Website</h1>
-        <h3 class="introduction">Hi! I'm Neha currently a sophomere who loves...</h3>
-        <ol>
-            <li>Reading</li>
-            <li>Coding</li>
-            <li>Playing the Viola</li>
-            <li>Tutoring</li>
-        </ol>
-        <p>Here's a photo of me!</p>
-        <img class="me" src="myPhoto.jpg" alt="Photo of Neha" width="300">
-        <p>So, now you know what I like outside of school. In school, my favourite subjects are 
-         AP Precalculus,
-         AP US History,
-         Chemistry,
-         AP Computer Science A,
-         and of course... Web Applications!!
-        </p>
-        <p>Over the summer, I took a course on Augmented Reality, where I built CPR app for 
-        everyday common people. (pssst... do you want to see how it looks?? Click this button!!)
-        </p>
-        <button><a href="https://youtu.be/jSRjzQrxqn4" target="_blank">Unity Video Link</a></button>
+    <main>
+        <!-- this section represents the first main chunk of text on website-->
+        <section class="home">
+            <!-- the use of class="___" is so that it is easily abled to be styled in CSS -->
+            <h1 class="welcome">Welcome to Neha's Personal Website</h1>
+            <h3 class="introduction">Hi! I'm Neha currently a sophomere who loves...</h3>
+            <!-- represents the ordered list of items: 1. ; 2. ; 3. ... -->
+            <ol>
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Playing the Viola</li>
+                <li>Tutoring</li>
+            </ol>
+            <!-- a paragraph element - basically creates a small font of text -->
+            <p>Here's a photo of me!</p>
+            <!-- the image is created: the source tells where to find the image / the image link; the alt is for accessibility
+         in case the image doesn't show, or when using Screen Readers, this will help picturize the actual image; width sets
+         the width of the image-->
+            <img class="me" src="myPhoto.jpg" alt="Photo of Neha" width="300">
 
-    </section>
+            <h3>Something About Myself:</h3>
+            <p>As you probably know now, my name is Neha and I go to the Village High School in Houston TX. I am a
+                global citizen and
+                have lived all around the world, in Singapore, Houston, Dubai, London, and now again Houston! Both of my
+                parents are
+                from South India, and our nationality is Indian. Regarding after high school, in the future, I aspire to
+                be an engineer, though I am not
+                sure which branch I want to delve deeper into yet!
+            </p>
 
-    <div class="website">
-        <h3>Do you know what my favourite website is... guess</h3>
-        <a href="https://soraapp.com/welcome" target="_blank">Click to reveal</a>
-        <p>I used to have a subscription and it was great! It was and still is my heaven. 
-            Therefore, why it is my favourite website 😁 Though there are similar plateforms for what I use now!</p>
-    </div>
-      
-    <section class="contact" id="#contact">
-        <a href="contact.html"></a>
-    </section>
+            <p>So, now you know what I like outside of school and a bit about me! In school, my favourite subjects are
+                AP Precalculus,
+                AP US History,
+                Chemistry,
+                AP Computer Science A,
+                and of course... Web Applications!!
+            </p>
+            <p>Over the summer, I took a course on Augmented Reality, where I built CPR app for
+                everyday common people. (pssst... do you want to see how it looks?? Click this button!!)
+            </p>
+            <!-- a button element allows the user to click on the element to go to an external link
+         target="_blank" tells the link to be opened in a new tab -->
+            <button class="unityButton"><a href="https://youtu.be/jSRjzQrxqn4" target="_blank">Unity Video
+                    Link</a></button>
+
+        </section>
+
+        <!-- this section has no semantic meaning (meaning that it doesn't have a "proper" flow), mainly used for just styling
+     purposes-->
+        <div class="website">
+            <h3>Do you know what my favourite website is... guess</h3>
+            <a href="https://soraapp.com/welcome" target="_blank" class="soraLink">Click to reveal</a>
+            <p>I used to have a subscription and it was great! It was and still is my heaven.
+                Therefore, why it is my favourite website 😁 Though there are similar plateforms for what I use now!</p>
+        </div>
+    </main>
 </body>
-</html>
 
+<!-- this represents the ending of the web page, where users can find more information about the creator, etc -->
 <footer class="footer">
     <p>Navigate to other pages to learn more about me!</p>
 </footer>
+
+</html>

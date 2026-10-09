@@ -1,61 +1,97 @@
+<!-- Neha Garud, Oct 5 2026 -->
+<!-- This file represents the book recommendations tab in the website  -->
 <!DOCTYPE html>
+
+<!-- setting the language of the file/text to english -->
 <html lang="en">
+<!-- This is the head: which is used for the browser and search engines rather than directly shown on the web page itself -->
+
 <head>
+    <!-- ensures that the broswer correctly displays the text, emojis, fonts, etc -->
     <meta charset="UTF-8">
+    <!-- allows the page to be sized for any screen size of the device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- defines the name of the file -->
     <title>Document</title>
+    <!-- links the CSS file into the HTML so that it can be styled -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- the body class is where all of the main elements on the webpage go from -->
+
 <body>
+    <!-- this is the navigation bar, for easily accessbile switching between different pages -->
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-            <li><a href="skills.html">Skills</a></li>
+        <ul class="ule">
+            <li class="lie"><a href="index.html" class="ae">Home</a></li>
+            <li class="lie"><a href="contact.html" class="ae">Contact</a></li>
+            <li class="lie"><a href="recommendations.html" class="ae">Recommendations</a></li>
+            <li class="lie"><a href="skills.html" class="ae">Skills</a></li>
         </ul>
     </nav>
 
-    <h1>Book Recommendations!</h1>
-    <p>As you already know, I <b>LOVE</b> books, and need more recommendations!!</p>
-    <p>If you have any great Young Adult books, of any genre, please feel free to share them below!</p>
+    <!-- this section is about the main title, and indroction section -->
+    <section class="reco">
+        <h1>Book Recommendations!</h1>
+        <p>As you already know, I <b>LOVE</b> books, and need more recommendations!!</p>
+        <p>If you have any great Young Adult books, of any genre, please feel free to share them below!</p>
 
-    <figure class="power-image">
-        <img src="powerless.jpg" alt="powerless-book" width="275" height="400">
-        <figcaption class="power-text">An example of my all time <br>favourite YA books</figcaption>
-    </figure>
+        <!-- figcaption -> the caption for the image ; <br> makes bold text - alt for accessbility src for calling the image -->
+        <figure class="power-image">
+            <img src="powerless.jpg" alt="powerless-book" width="275" height="400">
+            <figcaption class="power-text">An example of my all time <br>favourite YA books</figcaption>
+        </figure>
 
-    <section class="contacts">
-        <p>Name (First + Last): </p>
-        <input required placeholder="Gerald Butler">
-    </section>
-    <section class="contacts">
-        <p>Email Address: </p>
-        <input required placeholder="hello@gmail.com">
-    </section>
-    <section class="contacts">
-        <p>Name of Book</p>
-        <input required placeholder="Powerless">
-    </section>
-     <section class="contacts">
-        <p>Author</p>
-        <input required placeholder="Lauren Roberts">
-    </section>
-    <form class="contacts">
-        <label>Genres?</label><br>
-        <input type="checkbox" name="genre">Romance<br>
-        <input type="checkbox" name="genre">Fiction<br>
-        <input type="checkbox" name="genre">Realistic Fiction<br>
-        <input type="checkbox" name="genre">Non-Fiction<br>
-        <input type="checkbox" name="genre">Fantasy<br>
-        <input type="checkbox" name="genre">Sci-Fi<br>
-        <input type="checkbox" name="genre">Other<br>
-    </form>
-    <section class="contacts">
-        <p>Small Blurb of Book Recommended</p>
-        <textarea rows="5" class="questions" required placeholder="Answer here"></textarea>
-    </section>
+        <section class="contacts">
+            <p>Name (First + Last): </p>
+            <!-- placeholder prompts the user what they should write in the box -->
+            <input required placeholder="Gerald Butler">
+        </section>
 
-    <button class="submit" >Submit</button>
+        <section class="contacts">
+            <p>Email Address: </p>
+            <!-- placeholder prompts the user what they should write in the box -->
+            <input required placeholder="hello@gmail.com">
+        </section>
+
+        <section class="contacts">
+            <p>Name of Book</p>
+            <!-- placeholder prompts the user what they should write in the box -->
+            <input required placeholder="Powerless">
+        </section>
+
+        <section class="contacts">
+            <p>Author</p>
+            <!-- placeholder prompts the user what they should write in the box -->
+            <input required placeholder="Lauren Roberts">
+        </section>
+
+        <!-- makes checkboxes which allows the user to select multiple items -->
+        <form class="contacts">
+            <label>Genres?</label><br>
+            <input type="checkbox" name="genre">Romance<br>
+            <input type="checkbox" name="genre">Fiction<br>
+            <input type="checkbox" name="genre">Realistic Fiction<br>
+            <input type="checkbox" name="genre">Non-Fiction<br>
+            <input type="checkbox" name="genre">Fantasy<br>
+            <input type="checkbox" name="genre">Sci-Fi<br>
+            <input type="checkbox" name="genre">Other<br>
+        </form>
+
+        <section class="contacts">
+            <p>Small Blurb of Book Recommended</p>
+            <!-- placeholder prompts the user what they should write in the box -->
+            <textarea rows="5" class="questions" required placeholder="Answer here"></textarea>
+        </section>
+
+        <!-- creates a button which a user can click on (doesn't work right now because we haven't learned javascript yet) -->
+        <button class="submit">Submit</button>
+    </section>
 </body>
+
+<!-- this represents the ending of the web page, where users can find more information about the creator, etc -->
+<footer class="footer">
+    <p>Navigate to other pages to learn more about me!</p>
+</footer>
+
+</html>
